@@ -1,3 +1,6 @@
+// Made by PalaBeaveR
+// Original: https://github.com/PalaBeaveR/Pull-html-sidebar/blob/master/js/sidebar.js
+
 let mouseX
 let mouseY
 let mousePressed
