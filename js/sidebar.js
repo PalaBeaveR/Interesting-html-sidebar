@@ -45,8 +45,8 @@ $(() => {
 	var think = setInterval(() => {
 		if(mousePressed) {
 			sidebar.css("width", Lerp(sidebar.width(), mouseX, 0.1))
-			sidebar.css("border-top-right-radius", Lerp(parseInt(sidebar.css("border-top-right-radius")), mouseY / window.innerHeight * 100, 0.1) + "%")
-			sidebar.css("border-bottom-right-radius", Lerp(parseInt(sidebar.css("border-bottom-right-radius")), 100 - mouseY / window.innerHeight * 100, 0.1) + "%")
+			sidebar.css("border-top-right-radius", Lerp(parseInt(sidebar.css("border-top-right-radius")), mouseY / window.innerHeight * 100 - (mouseX > window.innerWidth * maxWidth ? (mouseX - window.innerWidth * maxWidth) / 10 : 0), 0.1) + "%")
+			sidebar.css("border-bottom-right-radius", Lerp(parseInt(sidebar.css("border-bottom-right-radius")), 100 - mouseY / window.innerHeight * 100 - (mouseX > window.innerWidth * maxWidth ? (mouseX - window.innerWidth * maxWidth) / 10 : 0), 0.1) + "%")
 		} else {
 			if(sidebarAnchor === "right") {
 				sidebar.css("width", Lerp(sidebar.width(), Math.round(window.innerWidth * maxWidth), 0.1))
