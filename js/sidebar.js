@@ -1,4 +1,5 @@
 // Made by PalaBeaveR
+// Github: https://github.com/PalaBeaveR
 // Original: https://github.com/PalaBeaveR/Pull-html-sidebar/blob/master/js/sidebar.js
 
 let mouseX
